@@ -1,7 +1,7 @@
 import time
 import psutil
 from pypresence import Presence
-
+import keyboard
 
 client_id ="842103064449253413"
 RPC = Presence(client_id)
@@ -12,8 +12,9 @@ while True:
    
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(
-        details="CPU Usage= "+ str(issic)+"%",
+        details=keyboard.read_key(),
         state= "RAM Usage= "+str(isram)+"%",
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}]
+        
     )
     time.sleep(5)

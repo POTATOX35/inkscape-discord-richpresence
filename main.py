@@ -14,8 +14,8 @@ while True:
     RPC.update(
         details="CPU Usage= "+ str(issic)+"%",
         state= "RAM Usage= "+str(isram)+"%",
-        buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}]
-        
+        buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
+        start=int(time.time())
     )
     time.sleep(5)
     

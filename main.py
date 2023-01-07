@@ -13,9 +13,10 @@ while True:
        
         RPC.update(
         
-        state=project_name,
+        state="Editing" + project_name,
         large_image="logo1",
-        large_text="Playing Inkscape"
+        large_text="Playing Inkscape",
+        start=time.time
         )
     else:
         RPC.close()

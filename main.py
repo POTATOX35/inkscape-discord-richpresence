@@ -9,6 +9,11 @@ RPC = Presence(client_id)
 RPC.connect()
 lastname = ''
 while True:
+    windows = pyautogui.getAllWindows()
+
+    window=findwhat(windows, " - Inkscape")
+    if  window[0] != None:
+        project_name=window[0]
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):
             RPC.connect()

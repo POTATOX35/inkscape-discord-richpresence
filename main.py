@@ -12,7 +12,7 @@ while True:
    
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(
-        details=keyboard.read_key(),
+        details="CPU Usage= "+ str(issic)+"%",
         state= "RAM Usage= "+str(isram)+"%",
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}]
         

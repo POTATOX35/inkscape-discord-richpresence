@@ -15,6 +15,7 @@ while True:
         details="CPU Usage= "+ str(issic)+"%",
         state= "RAM Usage= "+str(isram)+"%",
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
+         small_text="zort",
         start=int(time.time())
     )
     time.sleep(5)

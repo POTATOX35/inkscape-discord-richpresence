@@ -12,17 +12,10 @@ while True:
         issic= round(psutil.cpu_percent(),1)
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(
-        details="CPU Usage= "+ str(issic)+"%",
-        
+        details="ShareX açık",
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
-        small_text="zort",
+        
         start=int(time.time())
     )
     time.sleep(5)
-    if ("ShareX.exe" in (i.name() for i in psutil.process_iter())) == False:
-          issic= round(psutil.cpu_percent(),1)
-    isram= round(psutil.virtual_memory().percent,1)
-    RPC.update(
-        details="No"
-    )
     

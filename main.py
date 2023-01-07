@@ -12,8 +12,8 @@ while True:
     windows = pyautogui.getAllWindows()
 
     window=findwhat(windows, " - Inkscape")
-    if  len(window) >=  0:
-        project_name=window[0]
+    if  len(window) >=  1:
+         project_name=window[0]
 
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):

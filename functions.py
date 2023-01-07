@@ -1,16 +1,8 @@
-def find(list, item):
+def findwhat(listy, item = ""):
     output = []
-    for element in list:
-        if (element.find("item") >= 0):
-            output.append(element)
+    for element in listy:
+        titr = element.title
+        if (titr.find(item) >= 0):
+            bro = titr[:titr.find(item)] + titr[titr.find(item) + len(item):] 
+            output.append(bro)
     return output
-
-deneme=[
-    "patates",
-    "patatesi severiz"
-    "ekmek arası patates"
-    "patats kötü",
-    "lahmacun pattissiz gitmez"
-]
-
-print(find(deneme, "patates"))

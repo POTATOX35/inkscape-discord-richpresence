@@ -14,9 +14,9 @@ while True:
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
     )
     else:
-        RPC.update(
-            
-        )
+        RPC.close()
+        time.sleep(10)
+    
     
     
     

@@ -8,9 +8,16 @@ RPC = Presence(client_id)
 RPC.connect()
 
 while True:
-    RPC.update(
-        details=str(("ShareX.exe" in (i.name() for i in psutil.process_iter()))),
+    if ("ShareX.exe" in (i.name() for i in psutil.process_iter())) == True:
+        RPC.update(
+        details="Çalışıyor",
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
     )
+    else:
+        RPC.update(
+        details="Çalışmıyor",
+        buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
+    )
+    
     
     

@@ -16,7 +16,7 @@ while True:
         state="Editing" + project_name,
         large_image="logo1",
         large_text="Playing Inkscape",
-        start=time.time()
+        start=int(time.time())
         )
     else:
         RPC.close()

@@ -9,17 +9,18 @@ RPC = Presence(client_id)
 RPC.connect()
 lastname = ''
 while True:
-    if (("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True and (lastname != project_name)):
-        lastname = project_name
-        RPC.update(
-        state="Editing " + project_name,
-        large_image="logo1",
-        large_text="Playing Inkscape",
-        start=int(time.time())
+    if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
+        if (lastname != project_name):
+            lastname = project_name
+            RPC.update(
+            state="Editing " + project_name,
+            large_image="logo1",
+            large_text="Playing Inkscape",
+            start=int(time.time())
         )
     else:
         RPC.close()
-        time.sleep(time.time)
+    time.sleep(5)
     
     
     

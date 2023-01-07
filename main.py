@@ -13,7 +13,7 @@ while True:
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(
         details="CPU Usage= "+ str(issic)+"%",
-        state= "chrome.exe" in (i.name() for i in psutil.process_iter()),
+        state= str("chrome.exe" in (i.name() for i in psutil.process_iter())),
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
          small_text="zort",
         start=int(time.time())

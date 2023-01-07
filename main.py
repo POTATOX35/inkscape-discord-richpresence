@@ -15,7 +15,7 @@ while True:
             RPC.update(start=int(time.time()))
             lastname = project_name
         RPC.update(
-        state="Editing" + project_name,
+        state="Editing " + project_name,
         large_image="logo1",
         large_text="Playing Inkscape"
         )

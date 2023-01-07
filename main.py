@@ -10,5 +10,5 @@ while True:
     issic= round(psutil.cpu_percent(),1)
    
     isram= round(psutil.virtual_memory().percent,1)
-    RPC.update(details="CPU Usage= "+ str(issic)+"%" ,state= "RAM Usage= "+str(isram)+"%", buttons=[{"label": "My Website", "url": "https://www.potatox.tk/"}, ...])
+    RPC.update(details="CPU Usage= "+ str(issic)+"%" ,state= "RAM Usage= "+str(isram)+"%")
     time.sleep(5)

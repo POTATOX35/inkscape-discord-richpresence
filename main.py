@@ -14,10 +14,7 @@ while True:
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
     )
     else:
-        RPC.update(
-        details="Çalışmıyor",
-        buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
-    )
+        RPC.close()
     
     
     

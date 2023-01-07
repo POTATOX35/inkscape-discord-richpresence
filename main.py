@@ -16,7 +16,7 @@ while True:
     if  len(window) >=  1:
          project_name=window[0]
     mayso = project_name
-    if project_name == "":
+    if project_name == "" or project_name == "   ":
         mayso = "Idling..."
     else:
         mayso = "Editing " + project_name

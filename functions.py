@@ -12,3 +12,4 @@ def findwhat(listy, item = ""):
 windows = pyautogui.getAllWindows()
 
 window=findwhat(windows, " - Inkscape")
+project_name=window[0]

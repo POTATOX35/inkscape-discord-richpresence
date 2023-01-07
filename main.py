@@ -11,7 +11,7 @@ while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         RPC.update(
         details="Çalışıyor",
-        large_image="logo1"
+        large_image="logo"
         )
     else:
         RPC.close()

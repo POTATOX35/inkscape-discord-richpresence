@@ -21,5 +21,4 @@ while True:
         )
     else:
         RPC.clear()
-    time.sleep(5)
     

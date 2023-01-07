@@ -20,6 +20,6 @@ while True:
             start=int(time.time())
         )
     else:
-        RPC.close()
+        RPC.clear()
     time.sleep(5)
     

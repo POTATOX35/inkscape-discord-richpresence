@@ -17,5 +17,5 @@ while True:
         
         start=int(time.time())
     )
-    time.sleep(5)
+    
     

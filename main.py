@@ -11,6 +11,7 @@ lastname = ''
 while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):
+            RPC.connect()
             lastname = project_name
             RPC.update(
             state="Editing " + project_name,

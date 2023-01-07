@@ -1,7 +1,7 @@
 import time
 import psutil
 from pypresence import Presence
-import keyboard
+import pyautogui
 
 client_id ="842103064449253413"
 RPC = Presence(client_id)
@@ -9,9 +9,12 @@ RPC.connect()
 
 while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
+       
         RPC.update(
+        
+        state="Playing Inkscape",
         large_image="logo1",
-        large_text="Playing Ikscape"
+        large_text="Playing Inkscape"
         )
     else:
         RPC.close()

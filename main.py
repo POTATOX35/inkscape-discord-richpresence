@@ -15,7 +15,7 @@ while True:
     )
     else:
         RPC.close()
-        sucuk=input('Press ENTER to exit')
+        time.sleep(time.time)
     
     
     

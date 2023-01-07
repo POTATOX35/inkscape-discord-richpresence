@@ -10,7 +10,7 @@ RPC.connect()
 while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         RPC.update(
-        large_image="logo",
+        large_image="logo1",
         large_text="Playing Ikscape"
         )
     else:

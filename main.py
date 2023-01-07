@@ -4,13 +4,18 @@ from pypresence import Presence
 import pyautogui
 from functions import *
 
+flag = 0
 client_id ="842103064449253413"
 RPC = Presence(client_id)
 RPC.connect()
 lastname = ''
 while True:
+    
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
-        if (lastname != project_name):
+        flag = 1
+    if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == False:
+        flag = 0
+    if (lastname != project_name):
             RPC.connect()
             lastname = project_name
             RPC.update(

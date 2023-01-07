@@ -3,6 +3,7 @@ import psutil
 from pypresence import Presence
 import pyautogui
 from functions import *
+import wmi
 
 client_id ="842103064449253413"
 RPC = Presence(client_id)
@@ -21,7 +22,7 @@ while True:
     else:
         mayso = "Editing " + project_name
 
-    if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
+    if ("inkscape.exe" in (i.Name for i in wmi.WMI().Win32_Process())):
         if (lastname != project_name):
 
             print(f"{time.time()}: {mayso}")

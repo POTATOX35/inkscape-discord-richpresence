@@ -12,8 +12,9 @@ while True:
     windows = pyautogui.getAllWindows()
 
     window=findwhat(windows, " - Inkscape")
-    if  window[0] != None:
+    if  len(window) >=  0:
         project_name=window[0]
+
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):
             RPC.connect()

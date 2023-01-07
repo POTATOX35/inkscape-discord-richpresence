@@ -11,8 +11,8 @@ while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         RPC.update(
         details="Çalışıyor",
-        buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
-    )
+        large_image="logo1"
+        )
     else:
         RPC.close()
         time.sleep(time.time)

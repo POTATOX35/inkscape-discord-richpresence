@@ -7,9 +7,8 @@ from functions import *
 client_id ="842103064449253413"
 RPC = Presence(client_id)
 RPC.connect()
-
+lastname = ''
 while True:
-    lastname = ''
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
        if lastname != project_name:
             RPC.update(start=int(time.time()))

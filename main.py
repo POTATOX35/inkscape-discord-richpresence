@@ -13,7 +13,7 @@ while True:
        
         RPC.update(
         
-        state="Playing Inkscape",
+        state=project_name,
         large_image="logo1",
         large_text="Playing Inkscape"
         )

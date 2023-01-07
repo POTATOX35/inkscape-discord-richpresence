@@ -7,11 +7,8 @@ client_id ="842103064449253413"
 RPC = Presence(client_id)
 RPC.connect()
 
-while True:
-    if ("ShareX.exe" in (i.name() for i in psutil.process_iter()))== True:
-        RPC.update(
-            state= "ShareX Oynuyor",
-        )
+while ("ShareX.exe" in (i.name() for i in psutil.process_iter()))== True:
+    
     issic= round(psutil.cpu_percent(),1)
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(

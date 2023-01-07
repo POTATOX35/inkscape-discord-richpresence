@@ -2,6 +2,7 @@ import time
 import psutil
 from pypresence import Presence
 import pyautogui
+from functions import *
 
 client_id ="842103064449253413"
 RPC = Presence(client_id)

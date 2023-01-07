@@ -23,6 +23,6 @@ while True:
           issic= round(psutil.cpu_percent(),1)
     isram= round(psutil.virtual_memory().percent,1)
     RPC.update(
-        details=" "
+        details="No"
     )
     

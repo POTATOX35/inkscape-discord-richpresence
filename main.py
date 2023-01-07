@@ -24,6 +24,8 @@ while True:
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):
 
+            print(f"hoam: {mayso}")
+
             RPC.connect()
             lastname = project_name
             RPC.update(
@@ -34,6 +36,7 @@ while True:
         )
     else:
         RPC.close()
+        print("kapattın sj")
     time.sleep(5)
     
     

@@ -1,5 +1,3 @@
-import pyautogui
-
 def findwhat(listy, item = ""):
     output = []
     for element in listy:

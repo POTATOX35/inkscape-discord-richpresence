@@ -20,14 +20,14 @@ while True:
         mayso = "Idling..."
     else:
         mayso = "Editing " + project_name
-        
+
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == True:
         if (lastname != project_name):
 
             RPC.connect()
             lastname = project_name
             RPC.update(
-            state=mayso
+            state=mayso,
             large_image="logo1",
             large_text="Playing Inkscape",
             start=int(time.time())

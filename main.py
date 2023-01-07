@@ -14,8 +14,7 @@ while True:
         buttons= [{"label": "GitHub", "url": "https://github.com/POTATOX35/pcstats-discrd-richpresence"}],
     )
     else:
-        RPC.close()
-        time.sleep(10)
+         sucuk=input('Press ENTER to exit')
     
     
     

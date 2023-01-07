@@ -8,6 +8,7 @@ client_id ="842103064449253413"
 RPC = Presence(client_id)
 RPC.connect()
 lastname = ''
+project_name = '   '
 while True:
     windows = pyautogui.getAllWindows()
 

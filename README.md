@@ -1,1 +1,1 @@
-# pcstats-discrd-richpresence
+# Pc Stats Discord RPC

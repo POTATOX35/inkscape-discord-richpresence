@@ -15,7 +15,7 @@ while True:
         flag = 1
     if ("inkscape.exe" in (i.name() for i in psutil.process_iter())) == False:
         flag = 0
-    if (lastname != project_name):
+    if (lastname != project_name) and flag == 1:
             RPC.connect()
             lastname = project_name
             RPC.update(
@@ -26,4 +26,3 @@ while True:
         )
     else:
         RPC.clear()
-    
